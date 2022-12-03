@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "Makefile": "makefile",
+        "*.tex": "latex",
+        "image.h": "c",
+        "vectors.h": "c"
+    }
+}
