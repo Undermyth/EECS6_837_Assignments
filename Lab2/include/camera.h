@@ -32,4 +32,23 @@ private:
 
 };
 
+class PerspectiveCamera: public Camera {
+
+public:
+
+    PerspectiveCamera(Vec3f& c, Vec3f& d, Vec3f& u, float g);
+    ~PerspectiveCamera() {};
+
+    Ray generateRay(Vec2f point);
+    float getTMin() const;
+
+private:
+
+    Vec3f center;       // center of the camera
+    Vec3f direction;    // camera direction
+    Vec3f up;           // camera up direction
+    float angle;        // field of perspective view
+
+};
+
 #endif

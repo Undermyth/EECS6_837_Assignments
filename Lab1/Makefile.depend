@@ -1,0 +1,13 @@
+camera.o: camera.cpp include/camera.h include/ray.h include/vectors.h
+group.o: group.cpp include/group.h include/object3d.h include/material.h \
+  include/vectors.h include/ray.h include/hit.h
+image.o: image.cpp include/image.h include/vectors.h
+main.o: main.cpp include/camera.h include/ray.h include/vectors.h \
+  include/image.h include/sphere.h include/object3d.h include/material.h \
+  include/hit.h include/group.h include/scene_parser.h
+matrix.o: matrix.cpp include/matrix.h include/vectors.h
+scene_parser.o: scene_parser.cpp include/scene_parser.h include/vectors.h \
+  include/matrix.h include/camera.h include/ray.h include/material.h \
+  include/object3d.h include/hit.h include/group.h include/sphere.h
+sphere.o: sphere.cpp include/sphere.h include/object3d.h \
+  include/material.h include/vectors.h include/ray.h include/hit.h

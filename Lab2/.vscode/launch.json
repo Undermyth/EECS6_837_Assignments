@@ -1,0 +1,33 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "name": "(lldb) 启动",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/raytracer",
+        "args": [
+            "-input",
+            "assets/scene2_16_t_scale.txt",
+            "-size",
+            "40",
+            "40",
+            "-output",
+            "output2_16.tga",
+            "-depth",
+            "2",
+            "7",
+            "depth2_16.tga"
+        ],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "lldb"
+    }
+    ],
+    
+}

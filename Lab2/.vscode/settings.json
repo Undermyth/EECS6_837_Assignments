@@ -3,7 +3,6 @@
         "*.c": "c",
         "Makefile": "makefile",
         "*.tex": "latex",
-        "scene_parser.C": "cpp",
-        "matrix.C": "cpp"
+        "scene_parser.C": "cpp"
     }
 }
