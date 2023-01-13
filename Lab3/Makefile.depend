@@ -1,0 +1,34 @@
+sphere.o: sphere.cpp include/sphere.h include/object3d.h \
+ include/material.h include/vectors.h include/ray.h include/hit.h \
+ include/glCanvas.h
+matrix.o: matrix.cpp include/matrix.h include/vectors.h include/vectors.h
+triangle.o: triangle.cpp include/triangle.h include/object3d.h \
+ include/material.h include/vectors.h include/ray.h include/hit.h \
+ include/glCanvas.h include/matrix.h
+transform.o: transform.cpp include/transform.h include/object3d.h \
+ include/material.h include/vectors.h include/ray.h include/hit.h \
+ include/glCanvas.h include/matrix.h
+plane.o: plane.cpp include/plane.h include/object3d.h include/material.h \
+ include/vectors.h include/ray.h include/hit.h include/glCanvas.h
+image.o: image.cpp include/image.h include/vectors.h
+light.o: light.cpp include/light.h include/vectors.h include/object3d.h \
+ include/material.h include/ray.h include/hit.h include/glCanvas.h
+scene_parser.o: scene_parser.cpp include/scene_parser.h include/vectors.h \
+ include/matrix.h include/camera.h include/ray.h include/matrix.h \
+ include/light.h include/object3d.h include/material.h include/hit.h \
+ include/glCanvas.h include/material.h include/object3d.h include/group.h \
+ include/sphere.h include/plane.h include/triangle.h include/transform.h
+group.o: group.cpp include/group.h include/object3d.h include/material.h \
+ include/vectors.h include/ray.h include/hit.h include/glCanvas.h
+main.o: main.cpp include/camera.h include/ray.h include/vectors.h \
+ include/matrix.h include/image.h include/sphere.h include/object3d.h \
+ include/material.h include/hit.h include/glCanvas.h include/group.h \
+ include/light.h include/scene_parser.h include/glCanvas.h
+glCanvas.o: glCanvas.cpp include/glCanvas.h include/scene_parser.h \
+ include/vectors.h include/light.h include/object3d.h include/material.h \
+ include/ray.h include/hit.h include/glCanvas.h include/camera.h \
+ include/matrix.h include/group.h include/image.h
+material.o: material.cpp include/material.h include/vectors.h \
+ include/ray.h include/hit.h include/glCanvas.h
+camera.o: camera.cpp include/camera.h include/ray.h include/vectors.h \
+ include/matrix.h
