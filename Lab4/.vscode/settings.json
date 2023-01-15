@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "Makefile": "makefile",
+        "*.tex": "latex",
+        "scene_parser.C": "cpp",
+        "glCanvas.C": "cpp",
+        "light.C": "cpp",
+        "cmath": "cpp"
+    }
+}
